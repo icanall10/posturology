@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+    html body {
+        min-width: 320px;
+    }
+
+    .container {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+    .only-table {
+        display: none;
+    }
+    .only-mobile {
+        display: block;
+    }
+
+    .only-tablet-or-mobile {
+        display: block;
+    }
+    .only-desktop-or-tablet {
+        display: none;
+    }
+
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./js/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/colorbox/colorbox.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./js/colorbox/jquery.colorbox-min.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=12b6fb01-9891-4eee-b2a8-ad748569c91c&lang=ru_RU"
+            type="text/javascript"></script>
+</head>
+<body class="is-procedure-page">
+
+
+<div id="wrapper">
+
+    <div id="main">
+
+        <div class="header-block">
+            <div class="container inner flex flex-middle">
+                <a href="#" class="logo"></a>
+                <div class="info">
+                    <div class="contacts-and-order flex flex-middle">
+                        <div class="address">г. Москва, м. Пушкинская, Тверской бульвар, д. 13, стр. 1, под. 9</div>
+                        <div class="phones">+7 (495) 268-15-00 <span class="sep">|</span> +7 (916) 550-44-88</div>
+                        <div class="order">
+                            <a href="#" data-ui-dialog-link="order-form">Запись на прием</a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul class="flex flex-nowrap">
+                            <li><a href="#">Информация</a></li>
+                            <li>
+                                <a href="#">Отделения</a>
+                                <ul>
+                                    <li><a href="#">Неврология</a></li>
+                                    <li><a href="#">Мануальная терапия</a></li>
+                                    <li><a href="#">Гирудотерапия</a></li>
+                                    <li><a href="#">Рефлексотерапия</a></li>
+                                    <li><a href="#">Стоматология</a></li>
+                                    <li><a href="#">Логопедия</a></li>
+                                    <li><a href="#">ЛФК</a></li>
+                                    <li><a href="#">Функциональная диагностика</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Симптомы</a></li>
+                            <li><a href="#">Прейскурант</a></li>
+                            <li><a href="#">Вопросы и отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="center" class="container">
+            <div id="left">
+                <div class="procedure-menu-block p-80">
+                    <ul>
+                        <li>
+                            <a href="#">Процедуры/услуги</a>
+                            <ul>
+                                <li><a href="#">Межреберная невралгия</a></li>
+                                <li><a href="#">Корешковый синдром</a></li>
+                                <li><a href="#">Хлыстовая травма</a></li>
+                                <li><a href="#">Ущемление нерва</a></li>
+                                <li><a href="#">Невропатия тройничного нерва</a></li>
+                                <li><a href="#">Невропатия лицевого нерва</a></li>
+                                <li><a href="#">Невралгия тройничного нерва</a></li>
+                                <li><a href="#">Головная боль</a></li>
+                                <li><a href="#">Атипичные лицевые боли</a></li>
+                                <li><a href="#">Миофасциальный болевой синдром</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Патологии</a>
+                            <ul>
+                                <li><a href="#">Кариес</a></li>
+                                <li><a href="#">Пульпит</a></li>
+                                <li><a href="#">Пародонтит</a></li>
+                                <li><a href="#">Дисфункция височно-нижнечелюстного сустава</a></li>
+                                <li><a href="#">Неправильный прикус</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Проблемы</a>
+                            <ul>
+                                <li><a href="#">Щель между зубами</a></li>
+                                <li><a href="#">Острая боль</a></li>
+                                <li><a href="#">Распухла десна</a></li>
+                                <li><a href="#">Пожелтели зубы</a></li>
+                                <li><a href="#">Чувствительные зубы</a></li>
+                                <li><a href="#">Белые пятна</a></li>
+                                <li><a href="#">Выпала пломба</a></li>
+                                <li><a href="#">Откололся кусочек зуба</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+
+                <div class="procedure-page">
+
+                    <div class="header flex flex-nowrap pl-80 pt-80 mt--80 ml--80 mb-40">
+                        <div class="info pb-80">
+                            <div class="breadcrumb">
+                                <a href="#">Главная</a> / <a href="#">Отделения</a> / Неврология
+                            </div>
+                            <h1>Межреберная невралгия</h1>
+                            <div class="text">
+                                Предупреждение любого заболевания не только предотвращает развитие самой патологии, но и
+                                минимизирует риски возникновения возможных осложнений, улучшает качество жизни в целом.
+                                Профилактика межреберной невралгии складывается из комплекса мер по своевременному
+                                лечению
+                                болезней опорно-двигательного аппарата, сохранению правильной осанки, а также защите
+                                грудной
+                                клетки от травматических воздействий.
+                            </div>
+                        </div>
+                        <div class="img ml-80">
+                            <img src="./img/procedure2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="m-60">
+                        <div class="tabs">
+                            <a href="#" class="active">Межреберная невралгия</a>
+                            <a href="#">Причины</a>
+                            <a href="#">Симптомы</a>
+                            <a href="#">Лечение</a>
+                            <a href="#">Профилактика</a>
+                        </div>
+
+                        <div class="html-text">
+                            <p>
+                                Для этих целей доктора нашей клиники успешно применяют свой опыт в ортопедической
+                                неврологии. Такой подход расширяет возможности специалистов в сложных клинических
+                                ситуациях,
+                                принося долгожданное облегчение и быстрое возвращение пациента к нормальному образу
+                                жизни.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="m-60">
+                        <div class="h2">Цены</div>
+                        <div class="price-box">
+                            <div class="item flex flex-nowrap">
+                                <div class="name flex flex-middle">Консультация (первичная) невролога,
+                                    невролога-эпилептолога, доктора медицинских наук, профессора
+                                </div>
+                                <div class="value fs-22 flex flex-middle">8 000 руб.</div>
+                            </div>
+                            <div class="item flex flex-nowrap">
+                                <div class="name flex flex-middle">Консультация (повторная) невролога, доктора
+                                    медицинских наук, профессора
+                                </div>
+                                <div class="value fs-22 flex flex-middle">8 000 руб.</div>
+                            </div>
+                            <div class="item flex flex-nowrap">
+                                <div class="name flex flex-middle">Консультация (повторная) невролога, доктора
+                                    медицинских наук, профессора
+                                </div>
+                                <div class="value fs-22 flex flex-middle">8 000 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="html-text m-60">
+                        <div class="h2">Взаимосвязь постурального и стоматологического статуса</div>
+                        <p>
+                            Постурология рассматривает организм как единое целое, где каждый элемент должен быть
+                            структурно и функционально в оптимальном положении относительно других (постуральный
+                            баланс).
+                        </p>
+                        <p>
+                            Позиция нижней челюсти определяется:
+                        </p>
+                        <ol>
+                            <li>позой человека в пространстве (постурой);</li>
+                            <li>челюстно-лицевой архитектурой;</li>
+                            <li>типом прикуса (то, как челюсти соотносятся между собой);</li>
+                            <li>особенностями рото-лицевых функций (сосание, жевание, глотание и т.д.).</li>
+                        </ol>
+                        <p>
+                            Дисфункции стомато-гнатической системы обусловливают негативные изменения не только в
+                            жевательно-речевом аппарате, но и в других системах. Патологический процесс распространяется
+                            на шейный и другие отделы позвоночника, возникают проблемы дисфункции
+                            височно-нижнечелюстного сустава. Завышенная пломба, аномалии прикуса, неправильно
+                            изготовленные протезы вызывают нарушения жевательных и других функций.
+                        </p>
+                        <p>
+                            Нерешенные стоматологические проблемы способны привести к формированию или активизации
+                            триггерных точек, что проявляется спазмами, болью, отраженными феноменами (это те
+                            клинические случаи, когда невролог в поисках причин лицевых болей должен «войти в рот
+                            пациента» для установления первопричины проблемы). Часто диагностируются туннельные
+                            невропатии лицевого нерва и невралгия тройничного нерва, синдром болевой дисфункции
+                            височно-нижнечелюстного сустава, различные лицевые боли (прозопалгии).
+                        </p>
+                    </div>
+
+                    <div class="info-box p-40 p-40-h fs-20 m-60">
+                        Подробно о хлыстовой травме рассказано в нашей статье «Болевая дисфункция
+                        височно-нижнечелюстного сустава при хлыстовой травме» в журнале «Мануальная терапия» № 2 за 2013
+                        С. 70 – 78.
+                    </div>
+
+                    <div class="popular m-60 flex flex-nowrap">
+                        <div class="text fs-25">
+                            Наиболее часто к нам<br>
+                            обращаются со следующими<br>
+                            проблемами
+                        </div>
+                        <div class="list flex">
+                            <ul class="mr-40">
+                                <li>Щель между зубами</li>
+                                <li>Пожелтели зубы</li>
+                                <li>Болит зуб мудрости</li>
+                                <li>Острая зубная боль</li>
+                                <li>Выпала пломба</li>
+                            </ul>
+                            <ul class="mr-40">
+                                <li>Откололся кусочек зуба</li>
+                                <li>Чувствительные зубы</li>
+                                <li>Распухла десна</li>
+                                <li>Белые пятна на зубах</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-block block blue ml-80 mt-160">
+                    <div class="inner flex flex-nowrap">
+                        <div class="text fs-30 p-80 p-80-h t--80 l--80">
+                            Не откладывайте визит к врачу при появлении жалоб – лечение в нашей клинике проходит
+                            максимально комфортно и быстро.
+                        </div>
+                        <div class="form p-80 p-80-h">
+                            <div class="form-title fs-40">Запись на прием</div>
+                            <form action="#" class="order-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Имя">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit">Записаться</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="footer-block">
+            <div class="inner flex flex-nowrap p-50 p-80-h">
+                <div class="info">
+                    <div class="text mb-40">
+                        <div>ООО «Центр клинической постурологии»</div>
+                        <div>125009, Москва, Тверской бульвар, д. 13, стр. 1, под. 9</div>
+                    </div>
+                    <div class="rating">
+                        <img src="./img/rating.png" alt="">
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="name fs-20">Информация</div>
+                    <ul>
+                        <li><a href="#">Информация о клинике</a></li>
+                        <li><a href="#">Специалисты</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Лицензии</a></li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="name fs-20">Отделения</div>
+                    <ul>
+                        <li><a href="#">Неврология</a></li>
+                        <li><a href="#">Мануальная терапия</a></li>
+                        <li><a href="#">Гирудотерапия</a></li>
+                        <li><a href="#">Рефлексотерапия</a></li>
+                        <li><a href="#">Стоматология</a></li>
+                        <li><a href="#">Логопедия</a></li>
+                        <li><a href="#">ЛФК</a></li>
+                        <li><a href="#">Функциональная диагностика</a></li>
+                    </ul>
+                </div>
+                <div class="contacts fs-20 flex flex-nowrap">
+                    <div class="phones-and-email">
+                        <div class="phones mb-40">
+                            <div><a href="tel:74952681500">+7 (495) 268-15-00</a></div>
+                            <div><a href="tel:79165504488">+7 (916) 550-44-88</a></div>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:info@posturology.ru">info@posturology.ru</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="instagram" target="_blank"></a>
+                        <a href="#" class="facebook" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div data-ui-dialog="order-form"
+     data-ui-dialog-width="450"
+     data-ui-dialog-title="Запись на прием"
+>
+    <form action="#" class="order-form">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Имя">
+        </div>
+        <div class="form-group">
+            <input type="text" name="phone" placeholder="Телефон">
+        </div>
+        <div class="form-group">
+            <button type="submit">Записаться</button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

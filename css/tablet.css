@@ -1,0 +1,24 @@
+@media screen and (max-width: 1640px) {
+    .container {
+        width: auto;
+        margin: 0 30px;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+    .only-table {
+        display: block;
+    }
+    .only-mobile {
+        display: none;
+    }
+
+    .only-tablet-or-mobile {
+        display: block;
+    }
+    .only-desktop-or-tablet {
+        display: block;
+    }
+
+}
