@@ -64,4 +64,16 @@
         return numZeropad;
     };
 
+    isTabletOrMobile = function(){
+        return (isTablet() || isMolbile());
+    }
+
+    isMolbile = function(){
+        return ($(window).width() <= 768);
+    }
+
+    isTablet = function(){
+        return ($(window).width() > 768 && $(window).width() <= 1800);
+    }
+
 })(jQuery);

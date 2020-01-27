@@ -8,10 +8,19 @@ html body {
     margin: 0;
     padding: 0;
     position: relative;
+    min-width: 320px;
 }
 .container {
     width: 1760px;
     margin: 0 auto;
+}
+
+.header-block .mobile-menu-link {
+    display: none;
+}
+
+[data-mobile-menu] {
+    display: none;
 }
 
 #wrapper {
@@ -334,7 +343,7 @@ h2, .h2 {
 }
 
 .mb-20 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .mb-30 {
     margin-bottom: 30px;
@@ -585,6 +594,7 @@ a {
 }
 .flex-column {
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .form-group {
@@ -617,7 +627,9 @@ a {
     width: 1360px;
     box-sizing: border-box;
 }
-
+.header-block .phones .sep {
+    margin: 0 6px;
+}
 .header-block .order a {
     display: block;
     line-height: 45px;
@@ -737,7 +749,7 @@ body:not(.is-home-page):after {
     z-index: -1;
 }
 
-.promo-block {
+.promo-block.block {
     background: url(../img/promo.jpg) no-repeat center #e7ebf4;
     margin-top: 0;
 }
@@ -782,6 +794,7 @@ body:not(.is-home-page):after {
 }
 .departments-block .items {
     margin-right: -1px;
+    justify-content: flex-start;
 }
 .departments-block .item {
     width: 25%;
@@ -948,6 +961,9 @@ body:not(.is-home-page):after {
 .doctors-list.owl-carousel .owl-stage {
     display: flex;
 }
+.doctors-list.owl-carousel .owl-item {
+    display: flex;
+}
 .doctors-list.owl-carousel .doctors-list-item {
     border-right: 1px solid #ccc;
 }
@@ -961,22 +977,29 @@ body:not(.is-home-page):after {
     align-items: center;
     margin-top: 40px;
 }
-.owl-dots button {
+.owl-carousel .owl-dots button.owl-dot {
     display: block;
     width: auto;
     height: auto;
-    border: none;
-    margin: 0 10px;
+    margin: 0 3px;
     cursor: pointer;
+    padding: 5px !important;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background: none
 }
 .owl-dots button span {
     display: block;
-    background: #ddd;
-    width: 14px;
-    height: 14px;
+    width: 6px;
+    height: 6px;
     border-radius: 100px;
+    background: #d1d1d1;
 }
-.owl-dots button.active span {
+.owl-carousel .owl-dots button.owl-dot.active {
+    border-color:  #1d428a;
+    background: #fff;;
+}
+.owl-carousel .owl-dots button.owl-dot.active span {
     background: #1d428a;
 }
 
@@ -989,6 +1012,9 @@ body:not(.is-home-page):after {
     min-width: 50%;
 
     display: flex;
+}
+.contacts-block .map {
+    background: #eee;
 }
 
 .contacts-block .contacts {
@@ -1040,47 +1066,52 @@ body:not(.is-home-page):after {
     background: #f5f5f5;
 }
 
-.certificates-list .owl-dots {
-    counter-reset: dots;
-    justify-content: flex-start;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 52px;
-    margin-right: 52px;
-}
-.certificates-list.owl-carousel button.owl-dot {
-    position: relative;
-    padding: 0 40px !important;
-    color: #b6b6b6;
-    margin: 0;
-}
-.certificates-list.owl-carousel button.owl-dot:first-child {
-    padding-left: 0 !important;
-}
-.certificates-list.owl-carousel button.owl-dot:last-child {
-    padding-right: 0 !important;
-}
-.certificates-list.owl-carousel button.owl-dot.active {
-    color: #111111;
-}
-.certificates-list .owl-dot:before {
-    counter-increment: dots;
-    content: counters(dots, ".", decimal-leading-zero)
-}
-.certificates-list .owl-dots span {
-    display: none;
-}
-.certificates-list .owl-dot:after {
-    content: '';
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    height: 1px;
-    width: 40px;
-    background: #111;
-}
-.certificates-list .owl-dot:last-child:after {
-    display: none;
+@media screen and (min-width: 1800px) {
+    .certificates-list .owl-dots {
+        counter-reset: dots;
+        justify-content: flex-start;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 52px;
+        margin-right: 52px;
+    }
+    .certificates-list.owl-carousel button.owl-dot {
+        position: relative;
+        padding: 0 40px !important;
+        color: #b6b6b6;
+        margin: 0;
+        border: none;
+        background: none !important;
+        border-radius: 0;
+    }
+    .certificates-list.owl-carousel .owl-dots button.owl-dot:first-child {
+        padding-left: 0 !important;
+    }
+    .certificates-list.owl-carousel .owl-dots button.owl-dot:last-child {
+        padding-right: 0 !important;
+    }
+    .certificates-list.owl-carousel .owl-dots button.owl-dot.active {
+        color: #111111;
+    }
+    .certificates-list .owl-dot:before {
+        counter-increment: dots;
+        content: counters(dots, ".", decimal-leading-zero)
+    }
+    .certificates-list .owl-dots span {
+        display: none;
+    }
+    .certificates-list .owl-dot:after {
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        height: 1px;
+        width: 40px;
+        background: #111;
+    }
+    .certificates-list .owl-dot:last-child:after {
+        display: none;
+    }
 }
 
 .footer-block {
@@ -1135,6 +1166,9 @@ body:not(.is-home-page):after {
 .footer-block .contacts {
     width: 22%;
     min-width: 22%;
+}
+.footer-block .rating img {
+    display: block;
 }
 
 .ui-dialog {
@@ -1329,6 +1363,10 @@ button {
     width: 400px;
 }
 
+.doctor-page .inner .name {
+    font-weight: bold;
+}
+
 .doctors-page .founder {
     box-shadow: 0px 0px 43px 0px rgba(47, 48, 59, 0.09);
 }
@@ -1502,6 +1540,7 @@ button {
 
 .faq-question-page .title {
     border-bottom: 1px solid #cacaca;
+    padding-bottom: 4px;
 }
 .faq-question-page .answer .img {
     width: 240px;
@@ -1556,6 +1595,7 @@ button {
     margin-right: 45px;
     color: #111111;
     position: relative;
+    display: block;
 }
 .tabs a:hover {
     text-decoration: underline;
@@ -1571,7 +1611,7 @@ button {
     background: #e13939;
     height: 5px;
     left: 0;
-    bottom: -1px;
+    bottom: 0;
     right: 0;
     z-index: 1;
 }
@@ -1607,8 +1647,9 @@ button {
     display: block;
 }
 
-.procedure-menu-block {
+.procedure-menu-block.block {
     padding-right: 30px;
+    margin: 0;
 }
 
 .procedure-menu-block > ul > li {
@@ -1760,7 +1801,7 @@ body.is-procedure-page {
     line-height: 1.5;
 }
 
-.works-page .item .img {
+.works-page .item {
     width: 368px;
 }
 .works-page .item .img {

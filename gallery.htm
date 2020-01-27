@@ -36,9 +36,18 @@
                 <div class="info">
                     <div class="contacts-and-order flex flex-middle">
                         <div class="address">г. Москва, м. Пушкинская, Тверской бульвар, д. 13, стр. 1, под. 9</div>
-                        <div class="phones">+7 (495) 268-15-00 <span class="sep">|</span> +7 (916) 550-44-88</div>
+                        <div class="phones flex flex-middle">
+                            <div class="phone">+7 (495) 268-15-00</div>
+                            <div class="sep">|</div>
+                            <div class="phone">+7 (916) 550-44-88</div>
+                        </div>
                         <div class="order">
                             <a href="#" data-ui-dialog-link="order-form">Запись на прием</a>
+                        </div>
+                        <div class="mobile-menu-link" data-mobile-menu-toggle>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                     <div class="menu">
@@ -67,6 +76,34 @@
             </div>
         </div>
 
+
+        <div class="mobile-menu" data-mobile-menu>
+            <div class="mobile-menu-overlay"></div>
+            <div class="mobile-menu-content">
+                <a href="#" class="close" data-mobile-menu-toggle></a>
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li class="has-children">
+                        <a href="#">Отделения</a>
+                        <ul>
+                            <li><a href="#">Неврология</a></li>
+                            <li><a href="#">Мануальная терапия</a></li>
+                            <li><a href="#">Гирудотерапия</a></li>
+                            <li><a href="#">Рефлексотерапия</a></li>
+                            <li><a href="#">Стоматология</a></li>
+                            <li><a href="#">Логопедия</a></li>
+                            <li><a href="#">ЛФК</a></li>
+                            <li><a href="#">Функциональная диагностика</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Симптомы</a></li>
+                    <li><a href="#">Прейскурант</a></li>
+                    <li><a href="#">Вопросы и отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div id="center" class="container">
             <div id="left">
                 <div class="left-menu-block p-80">
@@ -79,9 +116,13 @@
             </div>
             <div id="content">
 
+                <div class="breadcrumb">
+                    <a href="#">Главная</a> / Галерея
+                </div>
+
                 <h1>Фотогалерея центра</h1>
 
-                <div class="tabs">
+                <div class="tabs owl-carousel">
                     <a href="#" class="active">Вход в клинику</a>
                     <a href="#">Ресепшен</a>
                     <a href="#">Кабинеты</a>

@@ -1,11 +1,22 @@
 @media screen and (max-width: 768px) {
     html body {
-        min-width: 320px;
+        font-size: 14px;
+        line-height: 1.4;
     }
 
     .container {
         width: auto;
         margin: 0 20px;
+    }
+    .container .container {
+        margin: 0;
+    }
+
+    #center {
+        padding-bottom: 20px;
+    }
+    #content {
+        margin-top: 20px;
     }
 
     .only-desktop {
@@ -23,6 +34,803 @@
     }
     .only-desktop-or-tablet {
         display: none;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    .block {
+        margin: 30px 0;
+    }
+    .block-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .block-header {
+        margin-bottom: 30px;
+    }
+    .block-header .block-title,
+    .block-header:not(.flex) .block-title {
+        margin-bottom: 20px;
+    }
+
+    .breadcrumb {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .p-30 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .p-40 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .p-50 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .p-60 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .p-70 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .p-80 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .p-30-h {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .p-40-h {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .p-50-h {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .p-60-h {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .p-70-h {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .p-80-h {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pl-30 {
+        padding-left: 10px;
+    }
+    .pl-40 {
+        padding-left: 15px;
+    }
+    .pl-50 {
+        padding-left: 20px;
+    }
+    .pl-60 {
+        padding-left: 20px;
+    }
+    .pl-70 {
+        padding-left: 20px;
+    }
+    .pl-80 {
+        padding-left: 20px;
+    }
+
+    .pt-30 {
+        padding-top: 10px;
+    }
+    .pt-40 {
+        padding-top: 15px;
+    }
+    .pt-50 {
+        padding-top: 20px;
+    }
+    .pt-60 {
+        padding-top: 20px;
+    }
+    .pt-70 {
+        padding-top: 20px;
+    }
+    .pt-80 {
+        padding-top: 20px;
+    }
+
+    .pb-30 {
+        padding-bottom: 10px;
+    }
+    .pb-40 {
+        padding-bottom: 15px;
+    }
+    .pb-50 {
+        padding-bottom: 20px;
+    }
+    .pb-60 {
+        padding-bottom: 20px;
+    }
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+    .pb-80 {
+        padding-bottom: 20px;
+    }
+
+    .m-20 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .m-30 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .m-40 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .m-50 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .m-60 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .m-70 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .m-80 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .m-30-h {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .m-40-h {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .m-50-h {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .m-60-h {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .m-70-h {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .m-80-h {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ml-30 {
+        margin-left: 10px;
+    }
+    .ml-40 {
+        margin-left: 15px;
+    }
+    .ml-50 {
+        margin-left: 20px;
+    }
+    .ml-60 {
+        margin-left: 20px;
+    }
+    .ml-70 {
+        margin-left: 20px;
+    }
+    .ml-80 {
+        margin-left: 20px;
+    }
+
+    .ml-140 {
+        margin-left: 30px;
+    }
+
+    .mt-30 {
+        margin-top: 10px;
+    }
+    .mt-40 {
+        margin-top: 15px;
+    }
+    .mt-50 {
+        margin-top: 20px;
+    }
+    .mt-60 {
+        margin-top: 20px;
+    }
+    .mt-70 {
+        margin-top: 20px;
+    }
+    .mt-80 {
+        margin-top: 20px;
+    }
+    .mt-160 {
+        margin-top: 30px;
+    }
+
+    .mb-20 {
+        margin-bottom: 8px;
+    }
+    .mb-30 {
+        margin-bottom: 10px;
+    }
+    .mb-40 {
+        margin-bottom: 15px;
+    }
+    .mb-50 {
+        margin-bottom: 20px;
+    }
+    .mb-60 {
+        margin-bottom: 20px;
+    }
+    .mb-70 {
+        margin-bottom: 20px;
+    }
+    .mb-80 {
+        margin-bottom: 20px;
+    }
+
+    .mr-20 {
+        margin-right: 8px;
+    }
+    .mr-30 {
+        margin-right: 10px;
+    }
+    .mr-40 {
+        margin-right: 15px;
+    }
+    .mr-50 {
+        margin-right: 20px;
+    }
+    .mr-60 {
+        margin-right: 20px;
+    }
+    .mr-70 {
+        margin-right: 20px;
+    }
+    .mr-80 {
+        margin-right: 20px;
+    }
+
+    .mt--80 {
+        margin-top: -20px;
+    }
+    .ml--80 {
+        margin-left: -20px;
+    }
+
+    .t--80 {
+        top: -20px;
+    }
+    .l--80 {
+        left: -20px;
+    }
+
+    .fs-20 {
+        font-size: 14px;
+    }
+    .fs-22 {
+        font-size: 14px;
+    }
+    .fs-25 {
+        font-size: 14px;
+    }
+    .fs-30 {
+        font-size: 15px;
+    }
+    .fs-35 {
+        font-size: 22px;
+    }
+    .fs-40 {
+        font-size: 23px;
+    }
+    .fs-50 {
+        font-size: 24px;
+    }
+
+    .header-block {
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .header-block .logo,
+    body:not(.is-home-page) .header-block .logo {
+        width: 182px;
+        height: 39px;
+        background-image: url(../img/logo-mobile.png);
+    }
+
+    .header-block .mobile-menu-link {
+        width: 26px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .header-block .mobile-menu-link span {
+        height: 2px;
+        margin-bottom: 7px;
+    }
+    .header-block .mobile-menu-link span:last-child {
+        margin-bottom: 0;
+    }
+    .header-block .phones {
+        font-size: 13px;
+    }
+    .header-block .order {
+        margin-left: 0;
+    }
+    .header-block .order a {
+        line-height: 32px;
+        font-size: 10px;
+    }
+    .header-block .info {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .mobile-menu-content {
+        width: auto;
+        left: 0;
+        padding: 20px;
+    }
+    .mobile-menu-content > ul {
+        margin-top: 25px;
+    }
+    .mobile-menu-content > ul > li {
+        margin-bottom: 20px;
+    }
+    .mobile-menu-content > ul > li:last-child {
+        margin-bottom: 0;
+    }
+    .mobile-menu-content > ul > li > a {
+        font-size: 15px;
+    }
+    .mobile-menu-content li li a {
+        font-size: 14px;
+    }
+    .mobile-menu-content .close {
+        transform: scale(0.7);
+        top: 10px;
+        right: 10px;
+    }
+
+    .ui-dialog {
+        max-width: 100%;
+    }
+    .ui-dialog .ui-dialog-title {
+        font-size: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+    .mobile-menu-content > ul > li > a {
+        padding-left: 30px;
+    }
+    .mobile-menu-content li li a {
+        padding-left: 30px;
+    }
+    .mobile-menu-content li.has-children > a:after {
+        top: 0;
+    }
+
+    .promo-block .title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .promo-block .name {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .promo-block .text {
+        font-size: 14px;
+    }
+
+    .promo-block .inner {
+        padding: 20px 0;
+    }
+    .promo-block .more {
+        margin-top: 20px;
+    }
+
+    .departments-block .items {
+        display: block;
+    }
+    .departments-block .items .item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 200px;
+    }
+    .departments-block .item .name {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    .posturology-block .content .inner {
+        display: block;
+    }
+    .posturology-block .content .img {
+        width: auto;
+        min-width: 0;
+        margin: 0 0 20px;
+    }
+    .posturology-block .content .info {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .posturology-block .content:after {
+        font-size: 40px;
+        letter-spacing: 0;
+    }
+    .posturology-block .content:after {
+        line-height: 1;
+    }
+    .posturology-block .content {
+        padding-bottom: 70px;
+    }
+
+    .diagnoses-block .items {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .diagnoses-block .item {
+        width: 100%;
+    }
+    .diagnoses-block .item:last-child {
+        margin-bottom: 0;
+    }
+    .diagnoses-block .item .img img {
+        width: 100%;
+    }
+
+    .doctors-list-item {
+        width: 200px;
+    }
+
+    .contacts-block .inner {
+        display: block;
+    }
+    .contacts-block .contacts,
+    .contacts-block .map {
+        width: auto;
+    }
+    .contacts-block .map {
+        height: 250px;
+    }
+
+    .owl-carousel .certificates-list-item {
+        width: 190px;
+    }
+
+    .contacts-block {
+        margin-bottom: 0;
+    }
+
+    owl-dots {
+        margin-top: 20px;
+    }
+
+    .footer-block .menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-block .menu ul {
+        display: none;
+        margin-top: 10px;
+    }
+    .footer-block .menu.open ul {
+        display: block;
+    }
+    .footer-block .menu .name {
+        margin-bottom: 0;
+        position: relative;
+        padding-right: 40px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    .footer-block .menu .name:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+        width: 12px;
+        height: 12px;
+        background: url(../img/img.png) -150px -60px;
+    }
+    .footer-block .menu a {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .footer-block .contacts {
+        margin-bottom: 20px;
+    }
+    .footer-block .contacts .phones-and-email {
+        display: block;
+    }
+    .footer-block .contacts .phones {
+        margin-bottom: 20px;
+    }
+    .footer-block .contacts .social {
+        display: block;
+        margin-right: -8px;
+    }
+    .footer-block .contacts .social a {
+        margin: 0 0 5px;
+    }
+    .footer-block .contacts .social a:last-child {
+        margin-bottom: 0;
+    }
+    .footer-block .info {
+        display: block;
+    }
+    .footer-block .info .text {
+        text-align: center;
+    }
+    .footer-block .info .text div {
+        display: inline;
+    }
+    .footer-block .rating img {
+        margin: 0 auto;
+    }
+
+    .contacts-page .inner {
+        display: block;
+    }
+    .contacts-page .form {
+        width: auto;
+        min-width: 0;
+        margin: 20px -20px 0;
+    }
+
+    .contacts-page .images .items {
+        display: block;
+    }
+    .contacts-page .images .item {
+        width: auto;
+        margin: 0 0 20px;
+    }
+    .contacts-page .images .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .doctors-page .inner {
+        display: block;
+    }
+    .doctors-page .image {
+        width: auto;
+        min-width: 0;
+        margin: 20px 0 0;
+    }
+
+    .doctors-page .founder {
+        display: block;
+    }
+    .doctors-page .founder .img {
+        width: 100%;
+        margin: 0;
+    }
+    .doctors-page .founder .names {
+        display: block;
+    }
+
+    .doctors-list-2 {
+        display: block;
+    }
+    .doctors-list-item-2 {
+        width: auto;
+        margin: 0 0 20px;
+    }
+    .doctors-list-item-2:last-child {
+        margin-bottom: 0;
+    }
+    .doctors-page .doctors {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: -20px;
+    }
+    .doctors-list-item-2 .names {
+        font-size: 18px;
+    }
+
+    .faq-list-item {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .faq-list-item a {
+        padding: 12px 20px;
+    }
+    .faq-list-item:last-child a {
+        border: none;
+    }
+    .faq-list-item a:after {
+        display: none;
+    }
+
+    .faq-question-page .title {
+        line-height: 1.25;
+        padding-bottom: 10px;
+    }
+    .faq-question-page .answer {
+        display: block;
+    }
+    .faq-question-page .answer .img {
+        margin: 0 auto;
+        width: 100px;
+        min-width: 0;
+    }
+    .faq-question-page .answer .name {
+        text-align: center;
+    }
+    .faq-question-page .answer .desc {
+        text-align: center;
+    }
+
+    .tabs {
+        margin-bottom: 20px;
+    }
+    .tabs a {
+        line-height: 42px;
+    }
+
+    .gallery-page .items .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .gallery-page .items .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .procedure-menu-block.block {
+        margin-bottom: 20px;
+        padding: 0 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .procedure-page .header {
+        margin-right: -20px;
+        display: block;
+    }
+    .procedure-page .header .info {
+        width: auto;
+        padding-right: 20px;
+    }
+    .procedure-page .header .img {
+        width: auto;
+        margin: 20px 0 0;
+    }
+
+    .price-box {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .price-box .item {
+        display: block;
+    }
+    .price-box .item .value {
+        width: auto;
+        min-width: 0;
+        padding-top: 0;
+    }
+    .price-box .item .name {
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .info-box {
+        padding-left: 60px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .info-box:after {
+        left: 0;
+        top: 30px;
+    }
+
+    .procedure-page .popular .list ul {
+        width: auto;
+        margin: 0 0 5px;
+    }
+    .procedure-page .popular .list ul:last-child {
+        margin-bottom: 0;
+    }
+
+    .order-block {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: -20px;
+    }
+    .order-block .inner {
+        display: block;
+    }
+    .order-block .text {
+        position: static;
+        box-sizing: border-box;
+        width: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .order-block .form {
+        width: auto;
+    }
+
+    .works-page .items {
+        display: block;
+    }
+    .works-page .items .item {
+        width: auto;
+        margin: 0 0 20px;
+    }
+    .works-page .items .item:last-child {
+        margin-bottom: 0;
+    }
+    .works-page .item .img {
+        margin-bottom: 8px;
+    }
+
+    .reviews-list .item {
+        display: block;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px;
+    }
+    .reviews-list .item .img {
+        width: auto;
+        min-width: 0;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .reviews-list .item .img img {
+        height: 110px;
+        width: auto;
+        max-width: unset;
+        margin: 0 auto;
+        display: block;
+    }
+    .reviews-list .item .footer {
+        display: block;
+    }
+    .reviews-list .item .footer .name {
+        margin-bottom: 8px;
+    }
+    .reviews-list .item .footer .source {
+        justify-content: flex-start;
     }
 
 }

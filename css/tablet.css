@@ -1,7 +1,21 @@
-@media screen and (max-width: 1640px) {
+@media screen and (max-width: 1800px) {
+
+    html body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
     .container {
         width: auto;
         margin: 0 30px;
+    }
+    .container .container {
+        margin: 0;
     }
 
     .only-desktop {
@@ -19,6 +33,1028 @@
     }
     .only-desktop-or-tablet {
         display: block;
+    }
+
+    #center {
+        display: block;
+        padding-bottom: 30px;
+    }
+    #left {
+        width: auto;
+        min-width: 0;
+        min-height: 0;
+    }
+    #content {
+        padding: 0;
+        box-shadow: none;
+        margin-top: 25px;
+        width: auto;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 35px;
+        line-height: 1.15;
+        margin-bottom: 25px;
+    }
+    h2, .h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        height: 46px;
+        font-size: 13px;
+        padding: 0 25px;
+        font-weight: bold;
+    }
+    .button.small {
+        line-height: 48px;
+        font-size: 14px;
+        padding: 0 25px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+        height: 46px;
+    }
+    textarea {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+    }
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+
+    .block {
+        margin: 40px 0;
+    }
+    .block-title {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .block-header {
+        margin-bottom: 40px;
+    }
+    .block-header.flex {
+        display: block;
+    }
+    .block-header .block-title,
+    .block-header:not(.flex) .block-title {
+        margin-bottom: 25px;
+    }
+    .block-header.flex .block-title {
+        margin-right: 0;
+    }
+    .block-header .block-title br {
+        display: none;
+    }
+
+    body:not(.-is-home-page) .header-block {
+        border-bottom: 1px solid #1d428a;
+    }
+
+    .p-30 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .p-40 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .p-50 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .p-60 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .p-70 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .p-80 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .p-30-h {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .p-40-h {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .p-50-h {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .p-60-h {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .p-70-h {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .p-80-h {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .pl-30 {
+        padding-left: 15px;
+    }
+    .pl-40 {
+        padding-left: 20px;
+    }
+    .pl-50 {
+        padding-left: 30px;
+    }
+    .pl-60 {
+        padding-left: 30px;
+    }
+    .pl-70 {
+        padding-left: 30px;
+    }
+    .pl-80 {
+        padding-left: 30px;
+    }
+
+    .pt-30 {
+        padding-top: 15px;
+    }
+    .pt-40 {
+        padding-top: 20px;
+    }
+    .pt-50 {
+        padding-top: 30px;
+    }
+    .pt-60 {
+        padding-top: 30px;
+    }
+    .pt-70 {
+        padding-top: 30px;
+    }
+    .pt-80 {
+        padding-top: 30px;
+    }
+
+    .pb-30 {
+        padding-bottom: 15px;
+    }
+    .pb-40 {
+        padding-bottom: 20px;
+    }
+    .pb-50 {
+        padding-bottom: 30px;
+    }
+    .pb-60 {
+        padding-bottom: 30px;
+    }
+    .pb-70 {
+        padding-bottom: 30px;
+    }
+    .pb-80 {
+        padding-bottom: 30px;
+    }
+
+    .m-20 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .m-30 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .m-40 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .m-50 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .m-60 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .m-70 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .m-80 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .m-30-h {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .m-40-h {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .m-50-h {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .m-60-h {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .m-70-h {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .m-80-h {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .ml-30 {
+        margin-left: 20px;
+    }
+    .ml-40 {
+        margin-left: 20px;
+    }
+    .ml-50 {
+        margin-left: 30px;
+    }
+    .ml-60 {
+        margin-left: 30px;
+    }
+    .ml-70 {
+        margin-left: 30px;
+    }
+    .ml-80 {
+        margin-left: 30px;
+    }
+
+    .ml-140 {
+        margin-left: 40px;
+    }
+
+    .mt-30 {
+        margin-top: 20px;
+    }
+    .mt-40 {
+        margin-top: 20px;
+    }
+    .mt-50 {
+        margin-top: 30px;
+    }
+    .mt-60 {
+        margin-top: 30px;
+    }
+    .mt-70 {
+        margin-top: 30px;
+    }
+    .mt-80 {
+        margin-top: 30px;
+    }
+    .mt-160 {
+        margin-top: 50px;
+    }
+
+    .mb-20 {
+        margin-bottom: 10px;
+    }
+    .mb-30 {
+        margin-bottom: 15px;
+    }
+    .mb-40 {
+        margin-bottom: 20px;
+    }
+    .mb-50 {
+        margin-bottom: 30px;
+    }
+    .mb-60 {
+        margin-bottom: 30px;
+    }
+    .mb-70 {
+        margin-bottom: 30px;
+    }
+    .mb-80 {
+        margin-bottom: 30px;
+    }
+
+    .mr-20 {
+        margin-right: 10px;
+    }
+    .mr-30 {
+        margin-right: 15px;
+    }
+    .mr-40 {
+        margin-right: 20px;
+    }
+    .mr-50 {
+        margin-right: 30px;
+    }
+    .mr-60 {
+        margin-right: 30px;
+    }
+    .mr-70 {
+        margin-right: 30px;
+    }
+    .mr-80 {
+        margin-right: 30px;
+    }
+
+    .mt--80 {
+        margin-top: -30px;
+    }
+    .ml--80 {
+        margin-left: -30px;
+    }
+
+    .t--80 {
+        top: -30px;
+    }
+    .l--80 {
+        left: -30px;
+    }
+
+    .fs-20 {
+        font-size: 13px;
+    }
+    .fs-22 {
+        font-size: 14px;
+    }
+    .fs-25 {
+        font-size: 15px;
+    }
+    .fs-30 {
+        font-size: 16px;
+    }
+    .fs-35 {
+        font-size: 23px;
+    }
+    .fs-40 {
+        font-size: 27px;
+    }
+    .fs-50 {
+        font-size: 35px;
+    }
+
+    body:not(.is-home-page) {
+        background: #fff;
+    }
+    body:not(.is-home-page):after {
+        display: none;
+    }
+
+    .header-block {
+        padding: 7px 0;
+    }
+    .header-block .logo,
+    body:not(.is-home-page) .header-block .logo {
+        width: 194px;
+        height: 54px;
+        background-image: url(../img/logo-tablet.png);
+    }
+    .header-block .address {
+        display: none;
+    }
+    .header-block .phones {
+        display: block;
+        line-height: 1.3;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .header-block .phones .sep {
+        display: none;
+    }
+    .header-block .menu {
+        display: none;
+    }
+    .header-block .info {
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .header-block .order {
+        margin-left: 30px;
+    }
+    .header-block .order a {
+        line-height: 35px;
+        padding: 0 20px;
+        font-size: 11px;
+    }
+
+    .header-block .mobile-menu-link {
+        display: block;
+        width: 32px;
+        margin-left: 30px;
+    }
+    .header-block .mobile-menu-link span {
+        display: block;
+        height: 3px;
+        background: #1d428a;
+        margin-bottom: 8px;
+    }
+    .header-block .mobile-menu-link span:last-child {
+        margin-bottom: 0;
+    }
+
+    body:not(.is-home-page) .header-block .info {
+        background: none;
+    }
+
+    .promo-block {
+        background-size: auto 100%;
+    }
+
+    .promo-block .inner {
+        height: 370px;
+        padding: 30px 0;
+    }
+    .promo-block .title {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .promo-block .name {
+        font-size: 40px;
+    }
+
+    .promo-block .text {
+        font-size: 18px;
+        max-width: 400px;
+        line-height: 1.55;
+    }
+    .promo-block .more {
+        margin-top: 25px;
+    }
+    .promo-block .more a {
+        line-height: 48px;
+        padding: 0 25px;
+        font-size: 12px;
+    }
+
+    .departments-block .item {
+        width: 33.333%;
+        background-size: auto 160px;
+    }
+    .departments-block .item .name {
+        padding: 20px 30px;
+        font-size: 15px;
+    }
+
+    .posturology-block .block-header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .posturology-block .inner {
+        padding: 0;
+    }
+    .posturology-block .content .img {
+        width: 320px;
+        min-width: 320px;
+    }
+    .posturology-block .content .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .posturology-block .content .info .more a {
+        font-size: 14px;
+        padding-right: 65px;
+    }
+    .posturology-block .content .info .more a:after {
+        transform: scale(0.65);
+    }
+
+    .posturology-block .content {
+        padding-bottom: 100px;
+    }
+    .posturology-block .content:after {
+        font-size: 90px;
+        letter-spacing: 5px;
+    }
+
+    .diagnoses-block .items {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .diagnoses-block .item {
+        margin: 0 0 25px;
+        width: 33.33%;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+    }
+    .diagnoses-block .item .img img {
+        width: 100%;
+        height: auto;
+    }
+    .diagnoses-block .item .name {
+        font-size: 14px;
+    }
+
+    .doctors-list-item {
+        width: 255px;
+    }
+
+    .owl-dots {
+        margin-top: 30px;
+    }
+
+    .contacts-block {
+        margin-bottom: 0;
+    }
+    .contacts-block .item .value {
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+    .owl-carousel .certificates-list-item {
+        width: auto;
+    }
+    .owl-carousel .certificates-list-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer-block .inner {
+        flex-wrap: wrap;
+    }
+    .footer-block .menu {
+        order: -10;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footer-block .contacts {
+        order: -5;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-block .social {
+        display: flex;
+    }
+    .footer-block .social a {
+        margin-bottom: 0;
+        margin-right: 6px;
+    }
+    .footer-block .social a:last-child {
+        margin-right: 0;
+    }
+    .footer-block .contacts .phones {
+        font-size: 18px;
+        margin: 0;
+    }
+    .footer-block .contacts .phones-and-email {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+    .footer-block .contacts .email {
+        font-size: 18px;
+    }
+    .footer-block .rating img {
+        width: 100px;
+        height: auto;
+    }
+    .footer-block .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-block .menu a {
+        font-size: 16px;
+    }
+    .footer-block .menu .name {
+        font-size: 20px;
+    }
+
+    .contacts-page .form {
+        width: 320px;
+        min-width: 320px;
+    }
+
+    .contacts-page .form-title {
+        font-size: 20px;
+    }
+    .contacts-page .item .label {
+        margin-bottom: 3px;
+    }
+    .contacts-page .item .value {
+        font-weight: normal;
+        line-height: 1.3;
+        font-size: 14px;
+    }
+
+    .contacts-page .map {
+        height: 320px;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .contacts-page .images .item {
+        width: calc(33% - 10px);
+        margin-bottom: 20px;
+    }
+    .contacts-page .images .item .img img {
+        width: 100%;
+        height: auto;
+    }
+    .contacts-page .images .item .name {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .doctors-page .image {
+        display: flex;
+        align-items: flex-end;
+    }
+    .doctors-page .image {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .doctors-page .founder .img {
+        width: 190px;
+        min-width: 190px;
+    }
+    .doctors-page .founder .names {
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .doctors-page .founder .names .name {
+        margin-right: 6px;
+    }
+    .doctors-page .founder {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.45;
+    }
+    .doctors-page .founder-info {
+        padding: 15px 20px;
+    }
+    .doctors-page .founder .m-20 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .doctors-page .founder .mb-20 {
+        margin-bottom: 8px;
+    }
+    .doctors-page .founder .mb-20:last-child {
+        margin-bottom: 0;
+    }
+    .doctors-page .founder .fields {
+        font-size: 14px;
+    }
+    .doctors-page .doctors {
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+
+    .doctors-list-2 {
+        justify-content: space-between;
+    }
+    .doctors-list-2:after {
+        content: '';
+        width: calc(33.33% - 20px);
+        height: 1px;
+    }
+
+    .doctors-list-item-2 {
+        width: calc(33.33% - 20px);
+        margin: 0 0 30px;
+    }
+    .doctors-list-item-2 .info {
+        font-size: 13px;
+    }
+    .doctors-list-item-2 .names {
+        margin-bottom: 10px;
+    }
+    .doctors-list-item-2 .fields .item {
+        margin-bottom: 10px;
+    }
+    .doctors-list-item-2 .fields .item:last-child {
+        margin-bottom: 0;
+    }
+    .doctors-list-item-2 .text {
+        margin: 10px 0;
+    }
+
+    .doctor-page .inner .img {
+        width: 200px;
+        min-width: 200px;
+    }
+    .doctor-page .inner .name {
+        font-size: 18px;
+    }
+
+    .doctor-page .patents .number {
+        width: 180px;
+        min-width: 180px;
+    }
+    .doctor-page .patents .patent-info {
+        line-height: 1.5;
+    }
+    .doctor-page .patents .item {
+        margin-bottom: 25px;
+    }
+    .doctor-page .patents .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .doctor-page .certificates {
+        margin-left: -30px;
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+    .doctor-page .certificates .items {
+        justify-content: space-between;
+        margin-bottom: -30px;
+    }
+    .doctor-page .certificates .items:after {
+        content: '';
+        width: calc(33.33% - 20px);
+        height: 1px;
+    }
+    .doctor-page .certificates .item {
+        width: calc(33.33% - 20px);
+        margin: 0 0 30px;
+        box-sizing: border-box;
+    }
+    .doctor-page .html-text .fs-30 {
+        font-size: 20px;
+    }
+    .doctor-page .patents .title {
+        font-size: 20px;
+    }
+
+    .ui-dialog .ui-dialog-titlebar {
+        padding: 30px 30px 0;
+    }
+    .ui-dialog .ui-dialog-content {
+        padding: 30px;
+    }
+
+    .left-menu-block {
+        display: none;
+    }
+
+    .procedure-page .header {
+        margin-right: -30px;
+    }
+
+    .procedure-menu-block.block {
+        padding: 0 30px;
+        background: #1d428a;
+        margin: -1px -30px 30px;
+        position: relative;
+        z-index: 5;
+    }
+    .procedure-menu-block > ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .procedure-menu-block > ul > li {
+        margin: 0 45px 0 0;
+        position: relative;
+    }
+    .procedure-menu-block > ul > li:last-child {
+        margin-right: 0;
+    }
+    .procedure-menu-block > ul > li > a:after {
+        width: 12px;
+        height: 12px;
+        background: url(../img/img.png) -120px -60px transparent;
+        right: 0;
+        top: 50%;
+        margin-top: -7px;
+    }
+    .procedure-menu-block > ul > li > a {
+        padding: 13px 20px 13px 0;
+        font-size: 13px;
+    }
+    .procedure-menu-block li li {
+        margin-bottom: 14px;
+    }
+    .procedure-menu-block li li:last-child {
+        margin-bottom: 0;
+    }
+    .procedure-menu-block li li a {
+        color: #ffffff;
+        padding: 0 25px;
+        font-size: 13px;
+    }
+    .procedure-menu-block li ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 280px;
+        box-sizing: border-box;
+        background: #39a5e3;
+        padding: 14px 0 20px;
+
+        display: none;
+    }
+    .procedure-menu-block li.open ul {
+        display: block;
+    }
+
+    .faq-list-item a:after {
+        transform: scale(0.8);
+    }
+
+    .faq-question-page .answer .img {
+        width: 110px;
+        min-width: 110px;
+    }
+    .faq-question-page .back a {
+        font-size: 14px;
+        padding-left: 70px;
+    }
+    .faq-question-page .back a:after {
+        transform: scale(0.8);
+    }
+    .faq-question-page .answer .desc {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .faq-question-page .answer .name,
+    .faq-question-page .question .name {
+        font-size: 18px;
+    }
+
+    .tabs {
+        margin-bottom: 30px;
+    }
+    .tabs a {
+        margin-right: 30px;
+        line-height: 52px;
+    }
+
+    .gallery-page .items {
+        justify-content: space-between;
+    }
+    .gallery-page .items .item {
+        width: calc(50% - 15px);
+        margin: 0 0 30px;
+    }
+
+    .mobile-menu-overlay {
+        background: rgba(255, 255, 255, 0.7);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 20;
+    }
+
+    .mobile-menu-content {
+        position: fixed;
+        z-index: 21;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 450px;
+        box-sizing: border-box;
+        padding: 30px;
+        background: #0994dd;
+        color: #ffffff;
+        line-height: 1.45;
+    }
+    .mobile-menu-content a {
+        color: #ffffff;
+    }
+    .mobile-menu-content .close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 25px;
+        height: 25px;
+        background: url(../img/img.png) -60px -90px;
+    }
+
+    .mobile-menu-content > ul {
+        margin-top: 30px;
+    }
+    .mobile-menu-content > ul > li {
+        margin-bottom: 25px;
+    }
+    .mobile-menu-content > ul > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .mobile-menu-content li ul {
+        margin-top: 15px;
+        display: none;
+    }
+    .mobile-menu-content li.open ul {
+        display: block;
+    }
+
+    .mobile-menu-content li li {
+        margin-bottom: 6px;
+    }
+    .mobile-menu-content li li:last-child {
+        margin-bottom: 0;
+    }
+
+    .mobile-menu-content > ul > li > a {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 35px;
+    }
+    .mobile-menu-content li li a {
+        font-size: 18px;
+        font-weight: normal;
+        padding-left: 35px;
+    }
+
+    .mobile-menu-content li.has-children > a {
+        position: relative;
+    }
+    .mobile-menu-content li.has-children > a:after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url(../img/img.png) -90px -90px;
+        left: 0;
+        top: 2px;
+    }
+    .mobile-menu-content li.has-children.open > a:after {
+        background-position: -120px -90px;
+    }
+
+    .price-box .item .value {
+        width: 180px;
+        min-width: 180px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .info-box {
+        padding-left: 60px;
+        font-weight: 500;
+    }
+    .info-box:after {
+        left: 0;
+        transform: scale(0.7);
+    }
+
+    .procedure-page .popular {
+        flex-wrap: wrap;
+    }
+    .procedure-page .popular .text {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .procedure-page .popular .text br {
+        display: none;
+    }
+    .order-block .form {
+        width: 50%;
+        min-width: 50%;
+    }
+    .order-block .form-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .works-page .items {
+        justify-content: space-between;
+    }
+    .works-page .items .item {
+        width: calc(33.333% - 20px);
+        margin: 0 0 20px;
+    }
+    .works-page .items .item .text {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .works-page .title {
+        font-size: 20px;
+    }
+    .reviews-list .item .info .name {
+        font-weight: bold;
+    }
+    .reviews-list .item .info .text {
+        font-size: 15px;
+        line-height: 1.5;
     }
 
 }

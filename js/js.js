@@ -103,10 +103,21 @@
         $('.certificates-list.owl-carousel')
             .once()
             .owlCarousel({
-                items: 3,
                 nav: false,
                 dots: true,
-                pagination: true
+                responsive: {
+                    0: {
+                        autoWidth: true,
+                        margin: 20,
+                    },
+                    768: {
+                        items: 3,
+                        margin: 30
+                    },
+                    1800: {
+                        items: 3
+                    }
+                }
             });
 
 
@@ -122,7 +133,80 @@
                     }, {
                         searchControlProvider: 'yandex#search'
                     });
+
+                    map.behaviors.disable('scrollZoom');
                 });
+            });
+
+
+        $('.procedure-menu-block > ul > li > a')
+            .once()
+            .click(function () {
+                if (isTabletOrMobile()) {
+                    let wrapper = $(this).closest('.procedure-menu-block');
+                    let li = $(this).closest('li');
+                    let ul = li.children('ul');
+
+                    wrapper
+                        .find('li')
+                        .not(li)
+                        .removeClass('open');
+
+                    if (ul.length) {
+                        li.toggleClass('open');
+
+                        return false;
+                    }
+                }
+            });
+
+
+        $('.mobile-menu-content li.has-children > a')
+            .once()
+            .click(function () {
+                $(this)
+                    .closest('li')
+                    .toggleClass('open');
+
+                return false;
+            });
+
+
+        $('[data-mobile-menu-toggle]')
+            .once()
+            .click(function () {
+                $('[data-mobile-menu]').toggle();
+            });
+
+
+        $('.tabs.owl-carousel')
+            .once()
+            .owlCarousel({
+                autoWidth: true,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        margin: 20
+                    },
+                    768: {
+                        margin: 30
+                    },
+                    1800: {
+                        margin: 50
+                    }
+                }
+            });
+
+
+        $('.footer-block .menu .name')
+            .once()
+            .click(function () {
+                if (isTabletOrMobile()) {
+                    $(this)
+                        .closest('.menu')
+                        .toggleClass('open');
+                }
             });
 
     }
@@ -136,6 +220,15 @@
         if (!$target.closest(selector).length &&
             $(selector).is(":visible")) {
             $(selector).removeClass('open');
+        }
+
+        if (isTabletOrMobile()) {
+            let selector = '.procedure-menu-block > ul > li';
+
+            if (!$target.closest(selector).length &&
+                $(selector).is(":visible")) {
+                $(selector).removeClass('open');
+            }
         }
     });
 
