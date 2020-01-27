@@ -473,7 +473,7 @@
         background: none;
     }
 
-    .promo-block {
+    .promo-block.block {
         background-size: auto 100%;
     }
 
