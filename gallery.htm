@@ -52,7 +52,19 @@
                     </div>
                     <div class="menu">
                         <ul class="flex flex-nowrap">
-                            <li><a href="#">Информация</a></li>
+                            <li>
+                                <a href="#">Информация</a>
+                                <ul>
+                                    <li><a href="#">Неврология</a></li>
+                                    <li><a href="#">Мануальная терапия</a></li>
+                                    <li><a href="#">Гирудотерапия</a></li>
+                                    <li><a href="#">Рефлексотерапия</a></li>
+                                    <li><a href="#">Стоматология</a></li>
+                                    <li><a href="#">Логопедия</a></li>
+                                    <li><a href="#">ЛФК</a></li>
+                                    <li><a href="#">Функциональная диагностика</a></li>
+                                </ul>
+                            </li>
                             <li>
                                 <a href="#">Отделения</a>
                                 <ul>
@@ -122,37 +134,131 @@
 
                 <h1>Фотогалерея центра</h1>
 
-                <div class="tabs owl-carousel">
-                    <a href="#" class="active">Вход в клинику</a>
-                    <a href="#">Ресепшен</a>
-                    <a href="#">Кабинеты</a>
-                    <a href="#">Оборудование</a>
-                    <a href="#">Холл</a>
-                </div>
+                <div class="gallery-page" data-tabs>
+                    <div class="tabs owl-carousel">
+                        <a href="#" class="active" data-tabs-link="gallery-page-tab-1">Вход в клинику</a>
+                        <a href="#" data-tabs-link="gallery-page-tab-2">Ресепшен</a>
+                        <a href="#" data-tabs-link="gallery-page-tab-3">Кабинеты</a>
+                        <a href="#" data-tabs-link="gallery-page-tab-4">Оборудование</a>
+                        <a href="#" data-tabs-link="gallery-page-tab-5">Холл</a>
+                    </div>
 
-                <div class="gallery-page">
-                    <div class="items flex flex-left">
-                        <div class="item mr-40 mb-40">
-                            <a href="./img/g1.png" class="colorbox" rel="gallery-item">
-                                <img src="./img/g1.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item mr-40 mb-40">
-                            <a href="./img/g2.png" class="colorbox" rel="gallery-item">
-                                <img src="./img/g2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item mr-40 mb-40">
-                            <a href="./img/g3.png" class="colorbox" rel="gallery-item">
-                                <img src="./img/g2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="item mr-40 mb-40">
-                            <a href="./img/g4.png" class="colorbox" rel="gallery-item">
-                                <img src="./img/g4.png" alt="">
-                            </a>
+                    <div class="active" data-tabs-content="gallery-page-tab-1">
+                        <div class="items flex flex-left">
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g1.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g2.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g3.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g4.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g4.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <div data-tabs-content="gallery-page-tab-2">
+                        <div class="items flex flex-left">
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g2.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g3.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g4.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tabs-content="gallery-page-tab-3">
+                        <div class="items flex flex-left">
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g1.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g2.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g3.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g4.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tabs-content="gallery-page-tab-4">
+                        <div class="items flex flex-left">
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g1.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g2.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g3.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g4.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-tabs-content="gallery-page-tab-5">
+                        <div class="items flex flex-left">
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g1.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g2.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g3.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="item mr-40 mb-40">
+                                <a href="./img/g4.png" class="colorbox" rel="gallery-item">
+                                    <img src="./img/g4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

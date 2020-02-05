@@ -54,9 +54,16 @@
         $('.header-block .menu a')
             .once()
             .click(function () {
-                let ul = $(this)
-                    .closest('li')
-                    .children('ul');
+                let menu = $(this).closest('.menu');
+                let li = $(this).closest('li');
+
+                menu
+                    .find('li')
+                    .not(li)
+                    .find('ul')
+                    .removeClass('open');
+
+                let ul = li.find('ul');
 
                 if (ul.length) {
                     ul.toggleClass('open');
@@ -124,7 +131,7 @@
         $('.contacts-page .map')
             .once(function () {
                 ymaps.ready(function () {
-                    let coords = [55.760545, 37.599463];
+                    let coords = [55.760539, 37.599766];
 
                     let map = new ymaps.Map('contacts-page-map', {
                         center: coords,
@@ -135,6 +142,13 @@
                     });
 
                     map.behaviors.disable('scrollZoom');
+
+                    let placemark = new ymaps.Placemark(coords, {
+                        hintContent: 'г. Москва, м. Пушкинская, Тверской бульвар, д. 13, стр. 1, под. 9',
+                        balloonContent: 'г. Москва, м. Пушкинская, Тверской бульвар, д. 13, стр. 1, под. 9'
+                    });
+
+                    map.geoObjects.add(placemark);
                 });
             });
 
@@ -207,6 +221,51 @@
                         .closest('.menu')
                         .toggleClass('open');
                 }
+            });
+
+
+        $('.promo-block .owl-carousel')
+            .once()
+            .owlCarousel({
+                items: 1,
+                nav: true,
+                dots: true
+            });
+
+
+        $('[data-mobile-procedure-menu-toggle]')
+            .once('mobile-procedure-menu-toggle')
+            .click(function () {
+                $('[data-mobile-procedure-menu]').toggle();
+
+                return false;
+            });
+
+
+        $('.mobile-procedure-menu .menu > ul > li > a')
+            .once()
+            .click(function () {
+                $(this)
+                    .closest('li')
+                    .toggleClass('open');
+
+                return false;
+            });
+
+
+        $('[data-tabs-link]')
+            .once('tabs-link')
+            .click(function () {
+                let key = $(this).attr('data-tabs-link');
+                let wrapper = $(this).closest('[data-tabs]');
+
+                wrapper.find('[data-tabs-content]').removeClass('active');
+                wrapper.find('[data-tabs-content="' + key + '"]').addClass('active');
+
+                wrapper.find('[data-tabs-link]').removeClass('active');
+                wrapper.find('[data-tabs-link="' + key + '"]').addClass('active');
+
+                return false;
             });
 
     }

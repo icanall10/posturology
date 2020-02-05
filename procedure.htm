@@ -52,7 +52,19 @@
                     </div>
                     <div class="menu">
                         <ul class="flex flex-nowrap">
-                            <li><a href="#">Информация</a></li>
+                            <li>
+                                <a href="#">Информация</a>
+                                <ul>
+                                    <li><a href="#">Неврология</a></li>
+                                    <li><a href="#">Мануальная терапия</a></li>
+                                    <li><a href="#">Гирудотерапия</a></li>
+                                    <li><a href="#">Рефлексотерапия</a></li>
+                                    <li><a href="#">Стоматология</a></li>
+                                    <li><a href="#">Логопедия</a></li>
+                                    <li><a href="#">ЛФК</a></li>
+                                    <li><a href="#">Функциональная диагностика</a></li>
+                                </ul>
+                            </li>
                             <li>
                                 <a href="#">Отделения</a>
                                 <ul>
@@ -105,15 +117,16 @@
         </div>
 
         <div id="center" class="container">
+
             <div id="left">
                 <div class="only-desktop-or-tablet">
                     <div class="procedure-menu-block block p-80">
                         <ul>
                             <li>
-                                <a href="#">Процедуры/услуги</a>
+                                <span>Процедуры/услуги</span>
                                 <ul>
                                     <li><a href="#">Межреберная невралгия</a></li>
-                                    <li><a href="#">Корешковый синдром</a></li>
+                                    <li><a href="#" class="active">Корешковый синдром</a></li>
                                     <li><a href="#">Хлыстовая травма</a></li>
                                     <li><a href="#">Ущемление нерва</a></li>
                                     <li><a href="#">Невропатия тройничного нерва</a></li>
@@ -125,7 +138,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Патологии</a>
+                                <span>Патологии</span>
                                 <ul>
                                     <li><a href="#">Кариес</a></li>
                                     <li><a href="#">Пульпит</a></li>
@@ -135,7 +148,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Проблемы</a>
+                                <span>Проблемы</span>
                                 <ul>
                                     <li><a href="#">Щель между зубами</a></li>
                                     <li><a href="#">Острая боль</a></li>
@@ -154,24 +167,65 @@
                     <div class="procedure-menu-block block p-80">
                         <ul>
                             <li>
-                                <a href="#">ОТДЕЛЕНИЕ НЕВРОЛОГИИ</a>
-                                <ul>
-                                    <li><a href="#">Межреберная невралгия</a></li>
-                                    <li><a href="#">Корешковый синдром</a></li>
-                                    <li><a href="#">Хлыстовая травма</a></li>
-                                    <li><a href="#">Ущемление нерва</a></li>
-                                    <li><a href="#">Невропатия тройничного нерва</a></li>
-                                    <li><a href="#">Невропатия лицевого нерва</a></li>
-                                    <li><a href="#">Невралгия тройничного нерва</a></li>
-                                    <li><a href="#">Головная боль</a></li>
-                                    <li><a href="#">Атипичные лицевые боли</a></li>
-                                    <li><a href="#">Миофасциальный болевой синдром</a></li>
-                                </ul>
+                                <a href="#" data-mobile-procedure-menu-toggle>ОТДЕЛЕНИЕ НЕВРОЛОГИИ</a>
                             </li>
                         </ul>
                     </div>
+
+                    <div data-mobile-procedure-menu>
+                        <div class="mobile-procedure-menu">
+                            <a href="#" class="close" data-mobile-procedure-menu-toggle></a>
+                            <div class="title">
+                                Отделение<br>
+                                неврологии
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Процедуры/услуги</a>
+                                        <ul>
+                                            <li><a href="#">Межреберная невралгия</a></li>
+                                            <li><a href="#">Корешковый синдром</a></li>
+                                            <li><a href="#">Хлыстовая травма</a></li>
+                                            <li><a href="#">Ущемление нерва</a></li>
+                                            <li><a href="#">Невропатия тройничного нерва</a></li>
+                                            <li><a href="#">Невропатия лицевого нерва</a></li>
+                                            <li><a href="#">Невралгия тройничного нерва</a></li>
+                                            <li><a href="#">Головная боль</a></li>
+                                            <li><a href="#">Атипичные лицевые боли</a></li>
+                                            <li><a href="#">Миофасциальный болевой синдром</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Патологии</a>
+                                        <ul>
+                                            <li><a href="#">Кариес</a></li>
+                                            <li><a href="#">Пульпит</a></li>
+                                            <li><a href="#">Пародонтит</a></li>
+                                            <li><a href="#">Дисфункция височно-нижнечелюстного сустава</a></li>
+                                            <li><a href="#">Неправильный прикус</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Проблемы</a>
+                                        <ul>
+                                            <li><a href="#">Щель между зубами</a></li>
+                                            <li><a href="#">Острая боль</a></li>
+                                            <li><a href="#">Распухла десна</a></li>
+                                            <li><a href="#">Пожелтели зубы</a></li>
+                                            <li><a href="#">Чувствительные зубы</a></li>
+                                            <li><a href="#">Белые пятна</a></li>
+                                            <li><a href="#">Выпала пломба</a></li>
+                                            <li><a href="#">Откололся кусочек зуба</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div id="content">
 
                 <div class="procedure-page">

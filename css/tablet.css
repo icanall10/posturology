@@ -44,6 +44,9 @@
         min-width: 0;
         min-height: 0;
     }
+    #left:after {
+        display: none;
+    }
     #content {
         padding: 0;
         box-shadow: none;
@@ -85,7 +88,7 @@
     }
     textarea {
         font-size: 14px;
-        padding: 12px 0;
+        padding: 12px;
     }
 
     .form-group {
@@ -119,7 +122,7 @@
         display: none;
     }
 
-    body:not(.-is-home-page) .header-block {
+    body:not(.is-home-page) .header-block {
         border-bottom: 1px solid #1d428a;
     }
 
@@ -473,8 +476,15 @@
         background: none;
     }
 
-    .promo-block.block {
-        background-size: auto 100%;
+    .promo-block .item {
+        background-size: 100% auto;
+        background-position: center center;
+    }
+
+    @media (max-width: 1150px) {
+        .promo-block .item {
+            background-size: auto 100%;
+        }
     }
 
     .promo-block .inner {
@@ -679,8 +689,8 @@
         align-items: flex-end;
     }
     .doctors-page .image {
-        width: 250px;
-        min-width: 250px;
+        width: 290px;
+        min-width: 290px;
     }
 
     .doctors-page .founder .img {
@@ -1040,7 +1050,7 @@
     }
     .works-page .items .item {
         width: calc(33.333% - 20px);
-        margin: 0 0 20px;
+        margin: 0 0 28px;
     }
     .works-page .items .item .text {
         font-size: 13px;
@@ -1055,6 +1065,41 @@
     .reviews-list .item .info .text {
         font-size: 15px;
         line-height: 1.5;
+    }
+
+    .owl-nav .owl-prev {
+        left: 0;
+        transform: scale(0.8);
+    }
+    .owl-nav .owl-next {
+        right: 0;
+        transform: scale(0.8);
+    }
+
+    .promo-block .container {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    .works-page .item .img {
+        margin-bottom: 8px;
+    }
+
+    .work-page .text {
+        line-height: 1.45;
+    }
+    .work-page .img {
+        width: 250px;
+        min-width: 250px;
+    }
+    .work-page .info {
+        font-size: 16px;
+    }
+
+    .procedure-page .header .img {
+        min-width: 290px;
+        width: 290px;
+        margin-bottom: 40px;
     }
 
 }

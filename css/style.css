@@ -52,6 +52,19 @@ html body {
     width: 320px;
     min-width: 320px;
     min-height: 200px;
+    position: relative;
+}
+#left:after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: -1;
+
+    background: url(../img/procedure1.png) no-repeat top;
+
+    width: 418px;
+    height: 852px;
 }
 #content {
     width: 100%;
@@ -701,6 +714,9 @@ a {
 .header-block .menu > ul > li > ul.open {
     display: block;
 }
+.header-block .menu > ul > li:first-child > ul.open {
+    margin-left: -190px;
+}
 .header-block .menu > ul > li > ul > li > a {
     color: #ffffff;
 }
@@ -750,8 +766,10 @@ body:not(.is-home-page):after {
 }
 
 .promo-block.block {
-    background: url(../img/promo.jpg) no-repeat center #e7ebf4;
     margin-top: 0;
+}
+.promo-block .item {
+    background: url(../img/promo.jpg) no-repeat center #e7ebf4;
 }
 .promo-block .inner {
     height: 640px;
@@ -1216,14 +1234,14 @@ input[type="text"]::placeholder {
 textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: 15px 0;
+    padding: 12px;
     font-family: "Gotham Pro", Arial, sans-serif;
     font-weight: 500;
     font-size: 18px;
-    border: none;
-    border-bottom: 1px solid #111;
+    border: 1px solid #111;
     background: #fff;
     border-radius: 0;
+    display: block;
 }
 textarea::placeholder {
     color: #111111;
@@ -1648,7 +1666,6 @@ button {
 }
 
 .procedure-menu-block.block {
-    padding-right: 30px;
     margin: 0;
 }
 
@@ -1658,17 +1675,19 @@ button {
 .procedure-menu-block > ul > li:last-child {
     margin-bottom: 0;
 }
-.procedure-menu-block > ul > li > a {
+.procedure-menu-block > ul > li > a,
+.procedure-menu-block > ul > li > span {
     color: #39bbff;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 15px;
     display: block;
     line-height: 1.5;
-    padding: 8px 0 8px 17px;
+    padding: 8px 30px 8px 17px;
     position: relative;
 }
-.procedure-menu-block > ul > li > a:after {
+.procedure-menu-block > ul > li > a:after,
+.procedure-menu-block > ul > li > span:after {
     content: '';
     width: 50px;
     height: 2px;
@@ -1684,18 +1703,12 @@ button {
     font-size: 15px;
     display: block;
     line-height: 1.5;
-    padding: 8px 0 8px 17px;
+    padding: 8px 30px 8px 17px;
 }
 .procedure-menu-block li li a.active,
 .procedure-menu-block li li a.active:hover {
     background: #de1b1b;
     text-decoration: none;
-}
-
-body.is-procedure-page {
-    background-image: url(../img/procedure1.png);
-    background-repeat: no-repeat;
-    background-position: 200px 200px;
 }
 
 .procedure-page .header {
@@ -1810,8 +1823,14 @@ body.is-procedure-page {
 .works-page .item .img img {
     display: block;
 }
-.works-page .item .name {
-    line-height: 1.4;
+.works-page .item .text {
+    line-height: 1.5;
+}
+.works-page .item .text a {
+    color: #111111;
+}
+.works-page .item .text a:hover {
+    text-decoration: underline;
 }
 
 .reviews-list .item {
@@ -1839,4 +1858,88 @@ body.is-procedure-page {
 }
 .reviews-list .item .source .social.facebook {
     background-position: -90px -60px;
+}
+
+.owl-nav {
+    display: block;
+}
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    width: 60px;
+    height: 90px;
+    background: url(../img/img.png) 0 -120px;
+    margin-top: -45px;
+    text-indent: -9999px;
+}
+.owl-nav .owl-next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 60px;
+    height: 90px;
+    background: url(../img/img.png) -60px -120px;
+    margin-top: -45px;
+    text-indent: -9999px;
+}
+
+.promo-block .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    z-index: 1;
+}
+.promo-block .owl-dots button span {
+    background: #fff;
+
+    box-shadow: 0 0 0 1px #1d428a;
+}
+
+@media screen and (max-width: 1970px) {
+    .promo-block .container {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: auto;
+    }
+}
+
+.work-page .img {
+    width: 400px;
+    min-width: 400px;
+}
+.work-page .img img {
+    display: block;
+}
+.work-page .info .title {
+    font-weight: bold;
+}
+.work-page .doctor-info {
+    line-height: 1.5;
+    width: 100%;
+}
+.work-page .doctor-img {
+    width: 84px;
+    min-width: 84px;
+}
+.work-page .doctor-img img {
+    display: block;
+}
+.work-page .doctor-info .label {
+    font-weight: bold;
+}
+.work-page .doctor-info .name {
+    font-weight: normal;
+}
+
+[data-mobile-procedure-menu] {
+    display: none;
+}
+
+[data-tabs-content] {
+    display: none;
+}
+[data-tabs-content].active {
+    display: block;
 }

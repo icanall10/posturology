@@ -670,13 +670,14 @@
         margin-right: -20px;
     }
     .faq-list-item a {
-        padding: 12px 20px;
+        padding: 12px 45px 12px 20px;
     }
     .faq-list-item:last-child a {
         border: none;
     }
     .faq-list-item a:after {
-        display: none;
+        transform: scale(0.6);
+        right: 10px;
     }
 
     .faq-question-page .title {
@@ -696,6 +697,13 @@
     }
     .faq-question-page .answer .desc {
         text-align: center;
+    }
+
+    .faq-question-page .back a:after {
+        transform: scale(0.6);
+    }
+    .faq-question-page .back a {
+        padding-left: 60px;
     }
 
     .tabs {
@@ -730,6 +738,7 @@
     }
     .procedure-page .header .img {
         width: auto;
+        min-width: 0;
         margin: 20px 0 0;
     }
 
@@ -795,7 +804,7 @@
     }
     .works-page .items .item {
         width: auto;
-        margin: 0 0 20px;
+        margin: 0 0 25px;
     }
     .works-page .items .item:last-child {
         margin-bottom: 0;
@@ -817,7 +826,7 @@
         margin-bottom: 15px;
     }
     .reviews-list .item .img img {
-        height: 110px;
+        height: 170px;
         width: auto;
         max-width: unset;
         margin: 0 auto;
@@ -831,6 +840,180 @@
     }
     .reviews-list .item .footer .source {
         justify-content: flex-start;
+    }
+
+    .promo-block .item {
+        background-position: center;
+        background-image: url(../img/promo-mobile.jpg);
+        background-size: 100% auto;
+    }
+    .promo-block .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .promo-block .owl-nav {
+        display: none;
+    }
+    .promo-block .owl-dots {
+        position: static;
+    }
+    .promo-block .owl-dots button span {
+        background: #ccc;
+        box-shadow: none;
+    }
+
+    .owl-dots {
+        margin-top: 20px;
+    }
+
+    .work-page .inner {
+        flex-wrap: wrap;
+    }
+    .work-page .img {
+        order: -1;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .work-page .img img {
+        width: 100%;
+        height: auto;
+    }
+    .work-page .info {
+        width: 100%;
+    }
+    .work-page .info .title {
+        margin-bottom: 20px;
+    }
+    .work-page .doctor {
+        display: block;
+        text-align: center;
+    }
+    .work-page .doctor-img {
+        margin: 0 auto 10px;
+    }
+    .work-page .doctor-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobile-procedure-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        overflow: auto;
+
+        padding: 20px;
+        box-sizing: border-box;
+
+        background: #fff;
+
+        z-index: 20;
+    }
+
+    .mobile-procedure-menu .close {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 20px;
+        top: 20px;
+        background: url(../img/img.png) -90px 0;
+    }
+    .mobile-procedure-menu .title {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .mobile-procedure-menu .menu > ul > li {
+        margin-bottom: 25px;
+    }
+    .mobile-procedure-menu .menu > ul > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .mobile-procedure-menu .menu li {
+        margin-bottom: 10px;
+    }
+    .mobile-procedure-menu .menu li:last-child {
+        margin-bottom: 0;
+    }
+
+    .mobile-procedure-menu .menu li ul {
+        margin-top: 10px;
+
+        display: none;
+    }
+
+    .mobile-procedure-menu .menu > ul > li > a {
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #111111;
+        position: relative;
+        display: block;
+    }
+    .mobile-procedure-menu .menu > ul > li > a:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: url(../img/img.png) -120px -120px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -6px;
+    }
+    .mobile-procedure-menu .menu > ul > li.open > a:after {
+        background-position: -150px -120px;
+    }
+    .mobile-procedure-menu .menu > ul > li.open > ul {
+        display: block;
+    }
+
+    .mobile-procedure-menu .menu a {
+        font-size: 13px;
+    }
+
+    .doctor-page .inner {
+        display: block;
+    }
+    .doctor-page .inner .img {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 20px;
+    }
+    .doctor-page .inner .img img {
+        width: 100%;
+        height: auto;
+    }
+    .doctor-page .inner .info {
+        margin: 0 0 20px;
+        width: auto;
+        min-width: 0;
+    }
+    .doctor-page .patents .item {
+        display: block;
+    }
+    .doctor-page .patents .number {
+        width: auto;
+        min-width: 0;
+        margin-bottom: 8px;
+    }
+    .doctor-page .patents .patent-info {
+        width: auto;
+        min-width: 0;
+    }
+
+    .doctor-page .certificates {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
 }
