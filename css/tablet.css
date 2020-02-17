@@ -843,7 +843,8 @@
     .procedure-menu-block > ul > li:last-child {
         margin-right: 0;
     }
-    .procedure-menu-block > ul > li > a:after {
+    .procedure-menu-block > ul > li > a:after,
+    .procedure-menu-block > ul > li > span:after {
         width: 12px;
         height: 12px;
         background: url(../img/img.png) -120px -60px transparent;
@@ -851,29 +852,27 @@
         top: 50%;
         margin-top: -7px;
     }
-    .procedure-menu-block > ul > li > a {
+    .procedure-menu-block > ul > li > a,
+    .procedure-menu-block > ul > li > span {
         padding: 13px 20px 13px 0;
         font-size: 13px;
     }
     .procedure-menu-block li li {
-        margin-bottom: 14px;
-    }
-    .procedure-menu-block li li:last-child {
         margin-bottom: 0;
     }
     .procedure-menu-block li li a {
         color: #ffffff;
-        padding: 0 25px;
+        padding: 8px 30px;
         font-size: 13px;
     }
     .procedure-menu-block li ul {
         position: absolute;
-        left: 0;
+        left: -30px;
         top: 100%;
         width: 280px;
         box-sizing: border-box;
         background: #39a5e3;
-        padding: 14px 0 20px;
+        padding: 10px 0 14px;
 
         display: none;
     }

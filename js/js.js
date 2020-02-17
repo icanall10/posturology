@@ -153,7 +153,8 @@
             });
 
 
-        $('.procedure-menu-block > ul > li > a')
+        $('.procedure-menu-block > ul > li')
+            .children('a, span')
             .once()
             .click(function () {
                 if (isTabletOrMobile()) {
