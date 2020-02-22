@@ -1384,6 +1384,10 @@ button {
 .doctor-page .inner .name {
     font-weight: bold;
 }
+.doctor-page .inner .info {
+    width: 100%;
+    min-width: 0;
+}
 
 .doctors-page .founder {
     box-shadow: 0px 0px 43px 0px rgba(47, 48, 59, 0.09);
