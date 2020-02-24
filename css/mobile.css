@@ -842,10 +842,10 @@
         justify-content: flex-start;
     }
 
-    .promo-block .item {
-        background-position: center;
-        background-image: url(../img/promo-mobile.jpg);
-        background-size: 100% auto;
+    .promo-block .item .img img {
+        height: 370px;
+        width: auto;
+        margin-right: -180px;
     }
     .promo-block .container {
         margin-left: 20px;

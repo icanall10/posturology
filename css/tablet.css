@@ -480,10 +480,21 @@
         background-size: 100% auto;
         background-position: center center;
     }
+    .promo-block .item .img img {
+        max-width: unset;
+        max-height: unset;
+
+        height: 450px;
+    }
 
     @media (max-width: 1150px) {
-        .promo-block .item {
-            background-size: auto 100%;
+        .promo-block .item .img {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .promo-block .item .img img {
+            margin: 0;
+            height: 400px;
         }
     }
 

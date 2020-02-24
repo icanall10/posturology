@@ -769,7 +769,24 @@ body:not(.is-home-page):after {
     margin-top: 0;
 }
 .promo-block .item {
-    background: url(../img/promo.jpg) no-repeat center #e7ebf4;
+    background: #e7ebf4;
+    position: relative;
+    z-index: 1;
+}
+.promo-block .item .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.promo-block .item .img img {
+    display: block;
+    max-height: 100%;
+    width: auto;
+    margin: 0 auto;
 }
 .promo-block .inner {
     height: 640px;
