@@ -486,18 +486,6 @@
 
         height: 450px;
     }
-
-    @media (max-width: 1150px) {
-        .promo-block .item .img {
-            display: flex;
-            justify-content: flex-end;
-        }
-        .promo-block .item .img img {
-            margin: 0;
-            height: 400px;
-        }
-    }
-
     .promo-block .inner {
         height: 370px;
         padding: 30px 0;
@@ -522,6 +510,17 @@
         line-height: 48px;
         padding: 0 25px;
         font-size: 12px;
+    }
+
+    @media (max-width: 1150px) {
+        .promo-block .item .img {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .promo-block .item .img img {
+            margin: 0;
+            height: 400px;
+        }
     }
 
     .departments-block .item {
